@@ -1,4 +1,4 @@
-import { Logo } from "@/components/"
+import { Logo } from "@/components/index"
 import { footer } from "@/resources"
 
 export function Footer() {
