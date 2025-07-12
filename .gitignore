@@ -1,5 +1,5 @@
-/node_modules
 .next/
+out/
 .swc/
 .*.env
 .DS_Store
@@ -7,3 +7,4 @@
 npm-debug.log*
 .vscode/
 .idea/
+/node_modules
