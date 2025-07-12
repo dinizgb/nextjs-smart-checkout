@@ -1,0 +1,8 @@
+export { DiscountAlert } from './DiscountAlert'
+export { Footer } from './Footer'
+export { Header } from './Header'
+export { Hero } from './Hero'
+export { Logo } from './Logo'
+export { OrderTotalSection } from './OrderTotalSection'
+export { PlaceOrderButton } from './PlaceOrderButton'
+export { ProductsTable } from './ProductsTable'
