@@ -1,1 +1,9 @@
-npm test
+echo 'Commit test init...'
+
+# Lint
+echo 'Running Lint...'
+npm run lint
+
+# Tests
+echo 'Running Tests...'
+npm run test
