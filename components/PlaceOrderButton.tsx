@@ -48,7 +48,7 @@ export function PlaceOrderButton({ disabled, onResetCart }: PlaceOrderButtonProp
     <>
       <section className="container mx-auto px-4 py-8">
         <div className="text-center">
-          <Button onClick={handlePlaceOrder} disabled={disabled} className="px-8 py-8 text-2xl cursor-pointer">
+          <Button onClick={handlePlaceOrder} disabled={disabled} className="px-8 py-8 text-xl cursor-pointer font-bold">
             {placeOrderButton.TEXT}
           </Button>
         </div>
@@ -62,7 +62,7 @@ export function PlaceOrderButton({ disabled, onResetCart }: PlaceOrderButtonProp
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel className="text-lg cursor-pointer">{confirmationDialog.CANCEL}</AlertDialogCancel>
-            <AlertDialogAction className="text-lg cursor-pointer" onClick={handleConfirmOrder}>{confirmationDialog.ACTION}</AlertDialogAction>
+            <AlertDialogAction className="text-lg cursor-pointer font-bold" onClick={handleConfirmOrder}>{confirmationDialog.ACTION}</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
@@ -74,8 +74,8 @@ export function PlaceOrderButton({ disabled, onResetCart }: PlaceOrderButtonProp
             <DrawerDescription className="text-xl">{successDrawer.DESCRIPTION}</DrawerDescription>
           </DrawerHeader>
           <DrawerFooter className="pb-9">
-            <DrawerClose>
-              <Button className="text-lg cursor-pointer" size="lg">{successDrawer.CLOSE}</Button>
+            <DrawerClose className="w-fit mx-auto text-xl cursor-pointer p-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-lg">
+              {successDrawer.CLOSE}
             </DrawerClose>
           </DrawerFooter>
         </DrawerContent>

@@ -36,7 +36,7 @@ describe("PlaceOrderButton", () => {
     const button = screen.getByRole("button", { name: /place my order/i })
     fireEvent.click(button)
 
-    expect(screen.getByText("It's everything ok with you order?")).toBeInTheDocument()
+    expect(screen.getByText("It's everything ok with your order?")).toBeInTheDocument()
     expect(screen.getByText("Let me check again")).toBeInTheDocument()
     expect(screen.getByText("Confirm")).toBeInTheDocument()
   })
