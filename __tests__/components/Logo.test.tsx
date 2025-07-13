@@ -7,6 +7,6 @@ describe("Logo", () => {
 
     const logo = screen.getByText("Next.js Smart Checkout")
     expect(logo).toBeInTheDocument()
-    expect(logo).toHaveClass("text-2xl", "font-bold", "text-gray-800")
+    expect(logo).toHaveClass("text-3xl", "font-bold", "text-gray-800")
   })
 })
