@@ -11,14 +11,14 @@ export function DiscountAlert({ discountMessage, discountTotal, discountItems }:
   const getMessage = () => {
     switch (discountMessage) {
       case 1:
-        return discountAlerts.SCENARIO_1.replace("{NUMBER_OF_ITENS_FOR_FREE}", `${discountItems.toString()} ${discountItems > 1 ? 'items' : 'item'}`).replace(
+        return discountAlerts.SCENARIO_1.replace("{NUMBER_OF_ITEMS_FOR_FREE}", `${discountItems.toString()} ${discountItems > 1 ? 'items' : 'item'}`).replace(
           "{VALUE_OF_SAVINGS}",
           `$${discountTotal.toFixed(2)}`,
         )
       case 2:
         return discountAlerts.SCENARIO_2.replace("{VALUE_OF_SAVINGS}", `$${discountTotal.toFixed(2)}`)
       case 3:
-        return discountAlerts.SCENARIO_3.replace("{NUMBER_OF_ITENS_FOR_FREE}", `${discountItems.toString()} ${discountItems > 1 ? 'items' : 'item'}`)
+        return discountAlerts.SCENARIO_3.replace("{NUMBER_OF_ITEMS_FOR_FREE}", `${discountItems.toString()} ${discountItems > 1 ? 'items' : 'item'}`)
     }
   }
 
