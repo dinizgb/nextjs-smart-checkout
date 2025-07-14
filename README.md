@@ -129,6 +129,7 @@ const orderDetails = useMemo(() => {
   - kebab-case for files, CSS Classes and Variables, html ids. 
   - PascalCase for components, function, interfaces, and types names.
 - **Clear Dependencies**: Explicit imports, no circular dependencies
+- **Semantic Versioning**: Versioning follows SemVer conventions (e.g., 1.0.0) for clear release management.
 
 ## 🔧 Technical Specifications
 

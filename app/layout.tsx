@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nextjs Smart Checkout",
+  title: "Next.js Smart Checkout",
   description: "Sample Next.js project for an e-commerce checkout.",
 };
 
