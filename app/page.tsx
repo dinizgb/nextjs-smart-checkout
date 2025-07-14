@@ -4,7 +4,7 @@ import { useSearchParams } from "next/navigation"
 import { useReducer, useMemo } from "react"
 import { Suspense } from "react"
 
-import { DiscountAlert, Footer, Header, Hero, OrderTotalSection, PlaceOrderButton, ProductsTable } from "@/components/index"
+import { DiscountAlert, Footer, Header, Hero, LoadingSpinner, OrderTotalSection, PlaceOrderButton, ProductsTable } from "@/components/index"
 
 import { cartReducer, initialCartState } from "@/reducers"
 import { calculateOrderDetails } from "@/utils"
@@ -66,7 +66,7 @@ function HomeContent() {
 
 export default function Home() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<LoadingSpinner />}>
       <HomeContent />
     </Suspense>
   );
