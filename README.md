@@ -1,4 +1,4 @@
-# E-commerce Platform - Next.js Application
+# Next.js Smart Checkout
 
 A modern, responsive e-commerce platform built with Next.js 15, TypeScript, and Tailwind CSS. This application demonstrates advanced discount logic, state management, and user experience patterns for both common and VIP customers.
 
